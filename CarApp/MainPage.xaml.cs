@@ -38,15 +38,6 @@ namespace CarApp
             trucksTextBlock.Text = trucks.ToString(); // 1 --> "1"
         }
 
-        private void trucksTextBlock_SelectionChanged(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void carsTextBlock_SelectionChanged(object sender, RoutedEventArgs e)
-        {
-
-        }
 
         private void carsButton_Click(object sender, RoutedEventArgs e)
         {
