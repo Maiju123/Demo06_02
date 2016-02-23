@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="laskeButton" Content="Laske" HorizontalAlignment="Left" Margin="375,161,0,0" VerticalAlignment="Top" Click="laskeButton_Click"/>
+        <Button x:Name="laskeButton" Content="Laske" HorizontalAlignment="Left" Margin="375,161,0,0" VerticalAlignment="Top" Click="laskeButton_Click" Background="#3300F5F5"/>
         <TextBlock x:Name="leveysTextBlock" HorizontalAlignment="Left" Margin="241,22,0,0" TextWrapping="Wrap" Text="Ikkunan leveys (L):" VerticalAlignment="Top"/>
         <TextBlock x:Name="korkeusTextBlock" HorizontalAlignment="Left" Margin="241,66,0,0" TextWrapping="Wrap" Text="Ikkunan korkeus (H):" VerticalAlignment="Top"/>
         <TextBlock x:Name="karmipuuTextBlock" HorizontalAlignment="Left" Margin="241,116,0,0" TextWrapping="Wrap" Text="Karmipuun leveys (W):" VerticalAlignment="Top"/>

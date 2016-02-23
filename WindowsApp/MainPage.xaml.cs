@@ -40,20 +40,17 @@ namespace WindowsApp
             int karmi = int.Parse(karmiString);
 
             //LASKUTOIMITUS KARMIN PIIRI
-            int karpiiri = 2 * (korkeus*karmi + leveys*karmi) / 10;
-
-            // LASKUTOIMITUS KARMIN PINTA-ALA
-            int karmiala = karmi * karpiiri;
+            int karpiiri = 2 *(korkeus + leveys) / 10;
 
             //LASKUTOIMITUS IKKUNAN ALA
-            int laske = (leveys * korkeus) / 100;
+            int lasilaske = (leveys * korkeus) /10;
 
             //LASKUTOIMITUS LASIN ALA
-            int lasilaske = (laske - karmiala) / 100;
+            int laske = (leveys - (2*karmi)) * (korkeus - (2*karmi)) / 10;
 
-            vastauskarmiTextBlock.Text = karpiiri.ToString();
-            vastausikkunaTextBlock.Text = lasilaske.ToString();
-            vastauslasiTextBlock.Text = laske.ToString(); // laske + "cm^2" ???
+            vastauskarmiTextBlock.Text = karpiiri.ToString() + " cm";
+            vastausikkunaTextBlock.Text = lasilaske.ToString() + " cm^2";
+            vastauslasiTextBlock.Text = laske.ToString() + " cm^2"; 
 
 
         }
